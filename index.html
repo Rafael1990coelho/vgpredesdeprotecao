@@ -9,40 +9,71 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
+      background: #f4f4f4;
     }
+
     header {
       background-color: #2b7a78;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 30px 20px;
     }
+
     header img {
-      max-width: 150px;
+      max-width: 120px;
       margin-bottom: 10px;
     }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 30px;
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #555;
+    }
+
     main {
       padding: 20px;
       text-align: center;
     }
-    h1 {
-      color: #17252a;
+
+    .servicos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
     }
-    p {
-      font-size: 18px;
-      color: #444;
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .whatsapp-button {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 30px;
       background-color: #25D366;
       color: white;
-      padding: 15px 25px;
+      padding: 14px 28px;
       border-radius: 5px;
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
     }
+
     .whatsapp-button:hover {
       background-color: #1ebe5d;
     }
@@ -50,13 +81,28 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo VGP Redes de Proteção" />
+    <img src="logo.png" alt="Logo VGP" />
     <h1>VGP Redes de Proteção</h1>
     <p>Segurança para sua família e seu lar</p>
   </header>
+
   <main>
-    <h2>Redes de proteção para janelas, sacadas e escadas</h2>
-    <p>Atendimento rápido e material de qualidade. Solicite seu orçamento.</p>
+    <h2>Redes de Proteção</h2>
+    <p>Instalamos redes com segurança e qualidade em apartamentos, casas e empresas.<br>
+    Proteção para crianças, animais e sua tranquilidade.</p>
+
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+      <div class="card">
+        <h3>Instalação em Janelas</h3>
+        <p>Rede de proteção para janelas com alta resistência e segurança.</p>
+      </div>
+      <div class="card">
+        <h3>Sacadas e Escadas</h3>
+        <p>Proteção para ambientes internos e externos, com acabamento impecável.</p>
+      </div>
+    </div>
+
     <a class="whatsapp-button" href="https://wa.me/5511972639451" target="_blank">
       Fale conosco pelo WhatsApp
     </a>
