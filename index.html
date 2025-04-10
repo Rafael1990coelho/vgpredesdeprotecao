@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VGP Redes de Proteção</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
       color: #333;
     }
     header {
-      background-color: #0077b6;
+      background: #0a0a23;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    .logo {
-      max-width: 200px;
-      margin: 20px auto;
-      display: block;
+    header img {
+      width: 100px;
     }
-    .banner {
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .content h1 {
+      margin-bottom: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .contact {
+      margin-top: 30px;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+    .contact input, .contact textarea {
       width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-    }
-    .container {
-      padding: 20px;
-      text-align: center;
-    }
-    .contato a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #0077b6;
-      color: white;
-      text-decoration: none;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
       border-radius: 5px;
     }
+    .contact button {
+      background: #0a0a23;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
     footer {
-      background-color: #ddd;
+      background: #0a0a23;
+      color: white;
       text-align: center;
       padding: 15px;
       margin-top: 30px;
@@ -49,28 +73,39 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="./logo.png" alt="Logo VGP Redes de Proteção">
+    <h1>VGP Redes de Proteção</h1>
+    <p>Segurança para sua família e seu lar</p>
+  </header>
+  
+  <div class="content">
+    <h2>Nossos Serviços</h2>
+    <div class="gallery">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.lJCMMA7a8Jl9nX47LDhvLAHaHa&pid=Api" alt="rede1">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.iRSTr1qN00y4svwcw9gHaQHaFj&pid=Api" alt="rede2">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.KR2jT3ZFGpQVopGu-UTzwQHaHa&pid=Api" alt="rede3">
+    </div>
 
-<header>
-  <img src="logo.png" alt="Logo VGP Redes de Proteção" class="logo" />
-  <h1>VGP Redes de Proteção</h1>
-  <p>Segurança para sua família e seu lar</p>
-</header>
+    <div class="contact">
+      <h2>Fale Conosco</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" placeholder="Seu nome" required>
 
-<img src="https://cdn.pixabay.com/photo/2019/09/23/21/46/net-4499137_1280.jpg" alt="Redes de proteção" class="banner" />
+        <label>Email:</label>
+        <input type="email" placeholder="Seu email" required>
 
-<div class="container">
-  <h2>Entre em contato</h2>
-  <p>Instalação de redes de proteção para janelas, sacadas, piscinas e muito mais.</p>
-  <div class="contato">
-    <a href="https://wa.me/5511972639451" target="_blank">WhatsApp</a>
-    <a href="rafael:rafael1990.coelho@gmail.com">E-mail</a>
-    <a href="https://instagram.com/vgredes" target="_blank">Instagram</a>
+        <label>Mensagem:</label>
+        <textarea rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </div>
-</div>
 
-<footer>
-  <p>&copy; 2025 VGP Redes de Proteção</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 VGP Redes de Proteção | (11) 99999-9999 | vgp@redes.com.br</p>
+  </footer>
 </body>
 </html>
