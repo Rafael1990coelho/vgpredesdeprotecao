@@ -46,25 +46,9 @@
       text-align: center;
     }
 
-    .servicos {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .card {
-      background-color: white;
-      padding: 20px;
-      width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
     .whatsapp-button {
       display: inline-block;
-      margin-top: 30px;
+      margin: 30px 0;
       background-color: #25D366;
       color: white;
       padding: 14px 28px;
@@ -76,6 +60,29 @@
 
     .whatsapp-button:hover {
       background-color: #1ebe5d;
+    }
+
+    .servicos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -91,21 +98,23 @@
     <p>Instalamos redes com segurança e qualidade em apartamentos, casas e empresas.<br>
     Proteção para crianças, animais e sua tranquilidade.</p>
 
+    <a class="whatsapp-button" href="https://wa.me/5511972639451" target="_blank">
+      Fale conosco pelo WhatsApp
+    </a>
+
     <h2>Nossos Serviços</h2>
     <div class="servicos">
       <div class="card">
+        <img src="servico1.jpg" alt="Instalação em Janelas" />
         <h3>Instalação em Janelas</h3>
         <p>Rede de proteção para janelas com alta resistência e segurança.</p>
       </div>
       <div class="card">
+        <img src="servico2.jpg" alt="Sacadas e Escadas" />
         <h3>Sacadas e Escadas</h3>
         <p>Proteção para ambientes internos e externos, com acabamento impecável.</p>
       </div>
     </div>
-
-    <a class="whatsapp-button" href="https://wa.me/5511972639451" target="_blank">
-      Fale conosco pelo WhatsApp
-    </a>
   </main>
 </body>
 </html>
