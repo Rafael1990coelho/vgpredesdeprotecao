@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VGP Redes de Proteção</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -21,6 +25,7 @@
 
     header img {
       width: 180px;
+      max-width: 90%;
       height: auto;
     }
 
@@ -59,17 +64,21 @@
       background-color: #1ebe5c;
     }
 
+    .content {
+      padding: 0 20px;
+    }
+
     .gallery {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
       margin: 30px auto;
-      padding: 0 20px;
     }
 
     .gallery img {
-      width: 250px;
+      width: 100%;
+      max-width: 250px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -78,6 +87,21 @@
 
     .gallery img:hover {
       transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .whatsapp button {
+        width: 80%;
+        font-size: 16px;
+      }
+
+      .subtitle {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
@@ -101,8 +125,6 @@
       <img src="A_set_of_digital_photographs_features_protective_s.png" alt="rede de proteção 1">
     </div>
   </div>
-  
-  
 
 </body>
 </html>
