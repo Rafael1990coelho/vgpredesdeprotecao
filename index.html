@@ -9,112 +9,100 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      text-align: center;
+      background-color: #f9f9f9;
     }
 
     header {
-      background-color: #2b7a78;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     header img {
-      max-width: 120px;
-      margin-bottom: 10px;
+      width: 180px;
+      height: auto;
     }
 
     h1 {
-      margin: 0;
-      font-size: 32px;
+      font-size: 2em;
+      margin-top: 10px;
     }
 
     h2 {
-      font-size: 26px;
-      margin-top: 30px;
-      color: #333;
+      color: #1e88e5;
     }
 
-    p {
-      font-size: 18px;
-      margin: 10px 0;
-      color: #555;
+    .subtitle {
+      color: #ff5722;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    main {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .whatsapp-button {
-      display: inline-block;
+    .whatsapp {
       margin: 30px 0;
+    }
+
+    .whatsapp button {
       background-color: #25D366;
       color: white;
-      padding: 14px 28px;
-      border-radius: 5px;
-      text-decoration: none;
+      border: none;
+      padding: 15px 25px;
       font-size: 18px;
-      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
+    .whatsapp button:hover {
+      background-color: #1ebe5c;
     }
 
-    .servicos {
+    .gallery {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
 
-    .card {
-      background-color: white;
-      padding: 20px;
-      width: 280px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      width: 100%;
+    .gallery img {
+      width: 250px;
       height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="Logo VGP" />
+    <img src="logo.png" alt="Logo VGP">
     <h1>VGP Redes de Proteção</h1>
-    <p>Segurança para sua família e seu lar</p>
+    <div class="subtitle">Segurança para sua família e seu lar</div>
   </header>
 
-  <main>
-    <h2>Redes de Proteção</h2>
-    <p>Instalamos redes com segurança e qualidade em apartamentos, casas e empresas.<br>
-    Proteção para crianças, animais e sua tranquilidade.</p>
-
-    <a class="whatsapp-button" href="https://wa.me/5511972639451" target="_blank">
-      Fale conosco pelo WhatsApp
+  <div class="whatsapp">
+    <a href="https://wa.me/5511972639451" target="_blank">
+      <button>Fale conosco pelo WhatsApp</button>
     </a>
+  </div>
 
+  <div class="content">
     <h2>Nossos Serviços</h2>
-    <div class="servicos">
-      <div class="card">
-        <img src="servico1.jpg" alt="Instalação em Janelas" />
-        <h3>Instalação em Janelas</h3>
-        <p>Rede de proteção para janelas com alta resistência e segurança.</p>
-      </div>
-      <div class="card">
-        <img src="servico2.jpg" alt="Sacadas e Escadas" />
-        <h3>Sacadas e Escadas</h3>
-        <p>Proteção para ambientes internos e externos, com acabamento impecável.</p>
-      </div>
+    <div class="gallery">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.lJCMMA7a8Jl9nX47LDhvLAHaHa&pid=Api" alt="Rede de proteção em janela">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.iRSTr1qN00y4svwcw9gHaQHaFj&pid=Api" alt="Rede de proteção em sacada">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.KR2jT3ZFGpQVopGu-UTzwQHaHa&pid=Api" alt="Rede de proteção em escada">
     </div>
-  </main>
+  </div>
+
 </body>
 </html>
