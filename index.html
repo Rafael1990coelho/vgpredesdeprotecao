@@ -2,129 +2,64 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VGP Redes de Proteção</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #f8f8f8;
-    }
-
-    header {
-      position: relative;
-      background: url('https://images.unsplash.com/photo-1599488615737-b1b8a1c8d8d4') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-content img {
-      max-width: 150px;
-      margin-bottom: 15px;
-    }
-
-    .hero-content h1 {
-      font-size: 2rem;
       margin: 0;
+      padding: 0;
+      background: #f5f5f5;
     }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Botão de WhatsApp fixo */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
+    header {
+      background-color: #2b7a78;
       color: white;
-      border-radius: 50%;
-      padding: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      text-decoration: none;
-      font-size: 24px;
-      z-index: 999;
+      padding: 20px;
+      text-align: center;
     }
-
+    header img {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #17252a;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
     .whatsapp-button:hover {
       background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="hero-content">
-      <img src="0476a3e7-b54b-42ab-bbfe-92c56d11bec5.png" alt="Logo VGP" />
-      <h1>Segurança para sua família e seu lar</h1>
-    </div>
+    <img src="logo.png" alt="Logo VGP Redes de Proteção" />
+    <h1>VGP Redes de Proteção</h1>
+    <p>Segurança para sua família e seu lar</p>
   </header>
-
-  <section class="section">
-    <h2>Redes de Proteção</h2>
-    <p>Instalamos redes com segurança e qualidade em apartamentos, casas e empresas. Proteção para crianças, animais e sua tranquilidade.</p>
-  </section>
-
-  <section class="section">
-    <h2>Nossos Serviços</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1625140729234-7451fef90fd6" alt="Serviço 1" />
-      <img src="https://images.unsplash.com/photo-1599639952880-59a3d7f77a2a" alt="Serviço 2" />
-      <img src="https://images.unsplash.com/photo-1612888597858-7b0bbff2bebb" alt="Serviço 3" />
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 VGP Redes de Proteção | Contato via WhatsApp: (11) 97263-9451</p>
-  </footer>
-
-  <a href="https://wa.me/5511972639451" target="_blank" class="whatsapp-button" title="Fale conosco no WhatsApp">📱</a>
-
+  <main>
+    <h2>Redes de proteção para janelas, sacadas e escadas</h2>
+    <p>Atendimento rápido e material de qualidade. Solicite seu orçamento.</p>
+    <a class="whatsapp-button" href="https://wa.me/5511972639451" target="_blank">
+      Fale conosco pelo WhatsApp
+    </a>
+  </main>
 </body>
 </html>
