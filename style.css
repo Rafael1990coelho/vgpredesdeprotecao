@@ -71,10 +71,15 @@
   }
   
   .carousel img {
-    width: 100%;
     display: none;
-    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    max-width: 500px;
   }
+  
+  .carousel img.active {
+    display: block;
+  }
+  
   
   .carousel img.active {
     display: block;
