@@ -4,106 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VGP Redes de Proteção</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #ffffff;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    header img {
-      width: 180px;
-      max-width: 90%;
-      height: auto;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-top: 10px;
-    }
-
-    h2 {
-      color: #1e88e5;
-    }
-
-    .subtitle {
-      color: #ff5722;
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .whatsapp {
-      margin: 30px 0;
-    }
-
-    .whatsapp button {
-      background-color: #25D366;
-      color: white;
-      border: none;
-      padding: 15px 25px;
-      font-size: 18px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .whatsapp button:hover {
-      background-color: #1ebe5c;
-    }
-
-    .content {
-      padding: 0 20px;
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin: 30px auto;
-    }
-
-    .gallery img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5em;
-      }
-
-      .whatsapp button {
-        width: 80%;
-        font-size: 16px;
-      }
-
-      .subtitle {
-        font-size: 1em;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -121,12 +22,13 @@
 
   <div class="content">
     <h2>Nossos Serviços</h2>
-    <div class="gallery">
-        <img src="servicos.png" alt="...">
-
+    <div class="carousel">
+      <img src="img1.jpg" class="active" alt="rede de proteção 1">
+      <img src="img2.jpg" alt="rede de proteção 2">
+      <img src="img3.jpg" alt="rede de proteção 3">
     </div>
   </div>
-  
 
+  <script src="script.js"></script>
 </body>
 </html>
